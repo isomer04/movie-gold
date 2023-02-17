@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import api from './api/axiosConfig';
-import axios from 'axios';
+import api from "./api/axiosConfig";
+import axios from "axios";
 import Layout from "./components/Layout";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import Trailer from "./components/trailer/Trailer";
-import Reviews from './components/reviews/Reviews';
+import Reviews from "./components/reviews/Reviews";
 import { autocompleteClasses } from "@mui/material";
 
 function App() {
@@ -31,15 +31,14 @@ function App() {
   const getMovieData = async (movieId) => {
     try {
       const response = await api.get(`/api/v1/movies/${movieId}`);
-      const singleMovie =  response.data;
+      const singleMovie = response.data;
       setMovie(singleMovie);
 
       setReviews(singleMovie.reviews);
-    }
-    catch(err) {
+    } catch (err) {
       console.log(err);
     }
-  }
+  };
 
   useEffect(() => {
     getMovies();
@@ -51,11 +50,20 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home movies={movies} />}></Route>
-          <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
-          <Route path="/Reviews/:movieId" element ={<Reviews getMovieData = {getMovieData} movie={movie} reviews ={reviews} setReviews = {setReviews} />}></Route>
-      </Route>
+          <Route path="/Trailer/:ytTrailerId" element={<Trailer />}></Route>
+          <Route
+            path="/Reviews/:movieId"
+            element={
+              <Reviews
+                getMovieData={getMovieData}
+                movie={movie}
+                reviews={reviews}
+                setReviews={setReviews}
+              />
+            }
+          ></Route>
+        </Route>
       </Routes>
-
     </div>
   );
 }
