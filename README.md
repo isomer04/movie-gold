@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Movie API Website with Review Functionality
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack website that provides users with a movie review functionality. The website is built using React, React Router, MongoDB, and Java. Users can browse through a collection of movies, view details about each movie, and write reviews for movies they have watched. 
 
-## Available Scripts
+The website also provides an admin panel where administrators can add new movies, edit existing movies, and delete movies. The admin panel also provides an overview of all the movies available in the database.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Browse through a collection of movies
+- View movie details
+- Write reviews for movies
+- Admin panel for adding, editing, and deleting movies
+- Overview of all movies available in the database
+- Search functionality to find movies by name
+- Pagination for easy browsing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- React Router
+- MongoDB
+- Java
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with this project, follow the steps below:
 
-### `npm run build`
+1. Clone the repository
+2. Install the necessary dependencies using `npm install`
+3. Start the development server using `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Backend Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project uses Java and MongoDB for the backend. To set up the backend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install Java and MongoDB
+2. Start the MongoDB server using the command `mongod`
+3. Start the Java server using the command `java -jar server.jar`
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you would like to contribute to this project, feel free to submit a pull request. Before submitting a pull request, make sure your changes pass the existing tests and add any necessary tests for new functionality.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the LICENSE file for more information.
