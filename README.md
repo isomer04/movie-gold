@@ -21,6 +21,9 @@ The website also provides an admin panel where administrators can add new movies
 - MongoDB
 - Java
 
+
+![demo1](https://user-images.githubusercontent.com/43922158/220765283-33550b8e-a167-400a-8c1c-9a728037ae0c.gif)
+
 ## Getting Started
 
 To get started with this project, follow the steps below:
