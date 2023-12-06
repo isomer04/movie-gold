@@ -1,6 +1,6 @@
 # Movie API Website with Review Functionality
 
-This is a full-stack website that provides users with a movie review functionality. The website is built using React, React Router, MongoDB, and Java. Users can browse through a collection of movies, view details about each movie, and write reviews for movies they have watched. 
+This is a full-stack website that provides users with a movie review functionality. The website is built using React, React Router, MongoDB, Java and Spring Boot. Users can browse through a collection of movies, view details about each movie, and write reviews for movies they have watched. 
 
 The website also provides an admin panel where administrators can add new movies, edit existing movies, and delete movies. The admin panel also provides an overview of all the movies available in the database.
 
@@ -20,6 +20,7 @@ The website also provides an admin panel where administrators can add new movies
 - React Router
 - MongoDB
 - Java
+- Spring Boot
 
 
 ![demo1](https://user-images.githubusercontent.com/43922158/220765283-33550b8e-a167-400a-8c1c-9a728037ae0c.gif)
